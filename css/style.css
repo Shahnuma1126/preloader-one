@@ -1,0 +1,29 @@
+#preloader{
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background-color: #BBB9B9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 5px solid dodgerblue;
+    border-right: 5px solid transparent;
+    animation: box 2s  infinite  forwards;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes box{
+    0%{
+      transform : translateY(0px) rotate(0deg);
+    }
+    
+    100%{
+      transform : translateY(0px) rotate(360deg);
+    }
+  }
+  
